@@ -6,6 +6,7 @@ import org.bukkit.event.HandlerList;
 
 /**
  * Cette classe ajoute un nouvel event qui permet de faciliter l'utilisation d'une boucle temporelle pour les modes de jeux
+ * Voir utilisation sur le Wiki
  */
 public class TimePassesEvent extends Event {
 
