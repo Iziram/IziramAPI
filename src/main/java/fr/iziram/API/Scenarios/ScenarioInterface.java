@@ -4,7 +4,9 @@ import org.bukkit.Bukkit;
 import org.bukkit.event.HandlerList;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
-
+/**
+ * Interface des scénarios
+ */
 public interface ScenarioInterface extends Listener {
 
 	default void unRegisterEvent() {

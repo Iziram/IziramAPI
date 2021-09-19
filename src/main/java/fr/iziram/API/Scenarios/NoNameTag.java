@@ -9,7 +9,9 @@ import org.bukkit.scoreboard.NameTagVisibility;
 import org.bukkit.scoreboard.Scoreboard;
 import org.bukkit.scoreboard.Team;
 
-
+/**
+ * Scénario NoNameTag WIP
+ */
 public class NoNameTag implements ScenarioInterface {
 
 	public static Scoreboard scoreboard;

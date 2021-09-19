@@ -11,7 +11,9 @@ import org.bukkit.inventory.meta.ItemMeta;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
+/**
+ * Scénario HasteyBoys
+ */
 public class HasteyBoys implements ScenarioInterface {
 
 	@EventHandler

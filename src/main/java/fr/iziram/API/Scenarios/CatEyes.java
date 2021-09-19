@@ -6,6 +6,9 @@ import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
 
+/**
+ * Scénario CatEyes
+ */
 public class CatEyes implements ScenarioInterface {
 
 	public static void enableCatEyes() {

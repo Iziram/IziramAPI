@@ -10,7 +10,9 @@ import org.bukkit.inventory.ItemStack;
 import java.util.HashMap;
 import java.util.Random;
 import java.util.UUID;
-
+/**
+ * Scénario DiamondLimit (configurable , voir Wiki)
+ */
 public class DiamondLimit implements ScenarioInterface {
 	private final HashMap<UUID, Integer> diamondHashMap = new HashMap<>();
 	private int limit = 22;

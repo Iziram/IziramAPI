@@ -5,7 +5,9 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.HandlerList;
 import org.bukkit.event.player.PlayerExpChangeEvent;
 import org.bukkit.plugin.java.JavaPlugin;
-
+/**
+ * Scénario XPBoost (configurable, voir Wiki)
+ */
 public class XPBoost implements ScenarioInterface {
 	public int boost = 1;
 

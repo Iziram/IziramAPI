@@ -6,7 +6,9 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.inventory.FurnaceBurnEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitRunnable;
-
+/**
+ * Scénario FastSmelting
+ */
 public class FastSmelting implements ScenarioInterface {
 
 	private JavaPlugin plugin;

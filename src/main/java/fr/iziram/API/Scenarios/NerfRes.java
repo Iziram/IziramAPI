@@ -7,7 +7,9 @@ import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
-
+/**
+ * Scénario Nerf Resistance
+ */
 public class NerfRes implements ScenarioInterface {
 	public int multiplier = 3;
 

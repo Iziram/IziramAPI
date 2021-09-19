@@ -9,7 +9,9 @@ import org.bukkit.inventory.ItemStack;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
+/**
+ * Scénario TimeBomb (configurable, voir Wiki)
+ */
 public class TimeBomb implements ScenarioInterface {
 
 	private int time;

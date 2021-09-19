@@ -4,7 +4,9 @@ package fr.iziram.API.Scenarios;
 import fr.iziram.API.Internal.scenarios.TimberTask;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.block.BlockBreakEvent;
-
+/**
+ * Scénario Timber (configurable, voir Wiki)
+ */
 public class Timber implements ScenarioInterface {
 
 	private final int limit;

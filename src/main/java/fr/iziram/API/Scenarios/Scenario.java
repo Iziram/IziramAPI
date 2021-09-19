@@ -1,7 +1,9 @@
 package fr.iziram.API.Scenarios;
 
 import org.bukkit.Material;
-
+/**
+ * Liste des Scénarios et instances publiques
+ */
 public enum Scenario {
 	DIAMOND_LIMIT("Diamond Limit", Material.DIAMOND, new DiamondLimit()),
 	FIRELESS("Fireless", Material.FLINT_AND_STEEL, new FireLess()),

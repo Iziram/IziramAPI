@@ -2,7 +2,9 @@ package fr.iziram.API.Scenarios;
 
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.entity.EntityDamageEvent;
-
+/**
+ * Scénario FireLess
+ */
 public class FireLess implements ScenarioInterface {
 
 	@EventHandler
