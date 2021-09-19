@@ -1,4 +1,4 @@
-package fr.iziram.API.Internal;
+package fr.iziram.API.Internal.scenarios;
 
 import fr.iziram.API.Utils.Timer;
 import org.bukkit.Bukkit;

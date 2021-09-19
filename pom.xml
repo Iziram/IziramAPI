@@ -6,7 +6,7 @@
 
     <groupId>fr.iziram</groupId>
     <artifactId>IziramAPI</artifactId>
-    <version>0.1-INTERNAL</version>
+    <version>1.0</version>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>

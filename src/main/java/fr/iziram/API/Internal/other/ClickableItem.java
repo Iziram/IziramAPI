@@ -1,4 +1,4 @@
-package fr.iziram.API.Internal;
+package fr.iziram.API.Internal.other;
 
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.inventory.ItemStack;

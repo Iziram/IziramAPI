@@ -1,4 +1,4 @@
-package fr.iziram.API.Internal;
+package fr.iziram.API.Internal.other;
 
 import org.bukkit.Bukkit;
 import org.bukkit.GameMode;

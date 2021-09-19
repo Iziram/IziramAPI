@@ -1,6 +1,6 @@
 package fr.iziram.API.Utils;
 
-import fr.iziram.API.Internal.NMSUtils;
+import fr.iziram.API.Internal.other.NMSUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;

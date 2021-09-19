@@ -1,7 +1,7 @@
 package fr.iziram.API.Scenarios;
 
 
-import fr.iziram.API.Internal.TimberTask;
+import fr.iziram.API.Internal.scenarios.TimberTask;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.block.BlockBreakEvent;
 

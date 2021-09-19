@@ -1,6 +1,6 @@
 package fr.iziram.API.Utils;
 
-import fr.iziram.API.Internal.ClickableItem;
+import fr.iziram.API.Internal.other.ClickableItem;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.event.HandlerList;

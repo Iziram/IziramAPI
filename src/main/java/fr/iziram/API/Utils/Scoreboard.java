@@ -1,7 +1,7 @@
 package fr.iziram.API.Utils;
 
-import fr.iziram.API.Internal.ScoreboardWrapper;
-import fr.iziram.API.Internal.TeamsRegister;
+import fr.iziram.API.Internal.scoreboard.ScoreboardWrapper;
+import fr.iziram.API.Internal.scoreboard.TeamsRegister;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 

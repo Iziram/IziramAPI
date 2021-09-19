@@ -1,6 +1,6 @@
 package fr.iziram.API.Scenarios;
 
-import fr.iziram.API.Internal.TimeBombTask;
+import fr.iziram.API.Internal.scenarios.TimeBombTask;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.entity.PlayerDeathEvent;

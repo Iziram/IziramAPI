@@ -1,4 +1,4 @@
-package fr.iziram.API.Internal;
+package fr.iziram.API.Internal.scoreboard;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -93,10 +93,10 @@ public class ScoreboardWrapper {
 	 */
 	@Override
 	public String toString() {
-		String out = "";
+		StringBuilder out = new StringBuilder();
 		int i = 0;
 		for (String string : modifies)
-			out += -(i + 1) + ")-> " + string + ";\n";
-		return out;
+			out.append(-(i + 1)).append(")-> ").append(string).append(";\n");
+		return out.toString();
 	}
 }

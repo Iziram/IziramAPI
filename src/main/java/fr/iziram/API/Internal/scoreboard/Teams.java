@@ -1,4 +1,4 @@
-package fr.iziram.API.Internal;
+package fr.iziram.API.Internal.scoreboard;
 
 import fr.iziram.API.Utils.Scoreboard;
 import org.bukkit.entity.Player;
