@@ -3,8 +3,6 @@ package fr.iziram.API.Utils;
 import fr.iziram.API.Internal.other.ClickableItem;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
-import org.bukkit.event.HandlerList;
-import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.inventory.InventoryCloseEvent;
 import org.bukkit.inventory.Inventory;
@@ -14,7 +12,10 @@ import java.util.HashMap;
 import java.util.UUID;
 import java.util.function.Consumer;
 
-public class Menu implements Listener {
+/**
+ * Classe Menu utilisé par le MenuBuilder et le MenuRegister
+ */
+public class Menu {
 	private static JavaPlugin plugin;
 	private String menuTitle;
 	private int menuSize;
@@ -25,7 +26,9 @@ public class Menu implements Listener {
 	private Consumer<InventoryCloseEvent> closeAction;
 	private UUID user;
 
-
+	/**
+	 *Initialisation du Menu
+	 */
 	public Menu(String menuTitle, int menuSize, HashMap<Integer, ClickableItem> itemHashMap, boolean autoCancel, boolean autoExit, Menu previousMenu, Consumer<InventoryCloseEvent> closeAction, UUID user) {
 		this.menuTitle = menuTitle;
 		this.menuSize = menuSize;
@@ -37,6 +40,9 @@ public class Menu implements Listener {
 		this.user = user;
 	}
 
+	/**
+	 Mise à jour du menu
+	 */
 	public Menu update(String menuTitle, int menuSize, HashMap<Integer, ClickableItem> itemHashMap, boolean autoCancel, boolean autoExit, Menu previousMenu, Consumer<InventoryCloseEvent> closeAction, UUID user) {
 		this.menuTitle = menuTitle;
 		this.menuSize = menuSize;
@@ -49,27 +55,26 @@ public class Menu implements Listener {
 		return this;
 	}
 
-	public Menu unRegisterEvent() {
-		HandlerList.unregisterAll(this);
-		return this;
-	}
-
-
-	public Menu registerEvent() {
-		unRegisterEvent();
-		Bukkit.getPluginManager().registerEvents(this, plugin);
-		return this;
-	}
-
+	/**
+	 * Renvoie le titre du Menu
+	 * @return String
+	 */
 	public String getMenuTitle() {
 		return menuTitle;
 	}
 
+	/**
+	 * Renvoie l'utilisateur privilégié du Menu
+	 * @return String
+	 */
 	public String getUser() {
 		if (user != null) return user.toString();
 		else return "";
 	}
 
+	/**
+	 * Construit l'inventaire affichable
+	 */
 	public Inventory buildInventory() {
 		Inventory menuInventory = Bukkit.createInventory(null, menuSize * 9, menuTitle);
 		itemHashMap.forEach((i, c) -> {
@@ -78,6 +83,9 @@ public class Menu implements Listener {
 		return menuInventory;
 	}
 
+	/**
+	 * Action lors d'un clic
+	 */
 	public Consumer<InventoryClickEvent> getClickAction() {
 		return (event) -> {
 			if (event.getClickedInventory() != null && event.getClickedInventory().getTitle().equals(menuTitle)
@@ -107,6 +115,9 @@ public class Menu implements Listener {
 		};
 	}
 
+	/**
+	 * Action lors de la fermeture du menu
+	 */
 	public Consumer<InventoryCloseEvent> getCloseAction() {
 		return (e) -> {
 			if (e.getInventory().getTitle().equalsIgnoreCase(menuTitle)) {

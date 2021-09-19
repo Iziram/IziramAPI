@@ -10,10 +10,17 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
+/**
+ * Cette classe sert à pré généré un monde
+ */
 public class PreGenerator {
-
-	public void startPregen(Player sender, int size) {
-		World world = Bukkit.getWorld("world");
+	/**
+	 * Permet de pré générer un monde
+	 * @param sender → utilisateur de la fonction
+	 * @param size → taille de la zone à pré générer
+	 * @param world → monde à pré générer
+	 */
+	public void startPregen(Player sender, int size, World world) {
 		List<Pair<Integer, Integer>> chunks = new ArrayList<>();
 		for (int x = -size; x < size; x += 16) {
 			for (int z = -size; z < size; z += 16) {
