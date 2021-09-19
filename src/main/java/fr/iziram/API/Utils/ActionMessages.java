@@ -11,6 +11,13 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
 public class ActionMessages {
+	/**
+	 * Fonction qui modifie le tab
+	 * @author Ph1lou
+	 * @param player → le joueur
+	 * @param header → Message au dessus du tab
+	 * @param footer → Message en dessous du tab
+	 */
 	public static void sendTabTitle(Player player, String header, String footer) {
 
 		header = header.replaceAll("%player%", player.getDisplayName());
@@ -41,6 +48,15 @@ public class ActionMessages {
 		}
 	}
 
+	/**
+	 * Cette commande permet d'envoyer un Titre sur l'écran d'un joueur
+	 * @param player → le joueur
+	 * @param title → le message du titre
+	 * @param subtitle → le message des sous titres
+	 * @param fadeInTime → la durée d'arrivé
+	 * @param showTime → la durée d'affichage
+	 * @param fadeOutTime → la durée de disparition
+	 */
 	public static void sendTitle(Player player, String title, String subtitle, int fadeInTime, int showTime, int fadeOutTime) {
 		try {
 			Object chatTitle = NMSUtils.getNMSClass("IChatBaseComponent").getDeclaredClasses()[0].getMethod("a", String.class)
@@ -68,6 +84,11 @@ public class ActionMessages {
 		}
 	}
 
+	/**
+	 * Cette fonction permet d'envoyer un message dans la actionbar d'un joueur
+	 * @param player → le joueur
+	 * @param message → le message
+	 */
 	public static void sendActionBar(Player player, String message) {
 		try {
 			Class<?> craftPlayerClass = NMSUtils.getNMSClass("entity.CraftPlayer");
@@ -111,6 +132,10 @@ public class ActionMessages {
 		}
 	}
 
+	/**
+	 * Fonction qui renvoie une fleche pointant vers une direction (en fonction d'un joueur)
+	 * @author Ph1Lou
+	 */
 	public static String updateArrow(Player player, Location target) {
 
 		Location location = player.getLocation();
