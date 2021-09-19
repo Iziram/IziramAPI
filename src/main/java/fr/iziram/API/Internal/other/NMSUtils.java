@@ -6,6 +6,9 @@ import org.bukkit.entity.Player;
 import java.lang.reflect.Method;
 import java.util.Arrays;
 
+/**
+ * Gestion des Packets Servers client minecraft
+ */
 public class NMSUtils {
 	public static String getVersion() {
 		if (version != null) {
@@ -70,8 +73,7 @@ public class NMSUtils {
 	public static Class<?> getNMSClass(String name) throws ClassNotFoundException {
 		try {
 			return getClassWithException(name);
-		} catch (ClassNotFoundException ex1) {
-			// Continue and try craft class
+		} catch (ClassNotFoundException ignored) {
 		}
 
 		return getCraftClassWithException(name);
