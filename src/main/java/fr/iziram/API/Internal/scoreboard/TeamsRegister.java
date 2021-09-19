@@ -5,16 +5,29 @@ import org.bukkit.scoreboard.Team;
 
 import java.util.HashMap;
 
+/**
+ * Cette classe permet générer et gérer plusieurs équipes dans un même scoreboard
+ */
 public class TeamsRegister {
 
 	private final HashMap<String, Teams> teamsList = new HashMap<>();
 	private final Scoreboard scoreboard;
 
+	/**
+	 * Initialisation du Register
+	 * @param scoreboard → Scoreboard qui sera utilisé par les équipes
+	 */
 	public TeamsRegister(Scoreboard scoreboard) {
 		this.scoreboard = scoreboard;
 	}
 
-
+	/**
+	 * Génère les équipes en fonction des paramètres donnés
+	 * @param number → nombre d'équipe à générer
+	 * @param max → maximum de joueur par équipe
+	 * @param friendlyFire → si le friendlyfire est actif
+	 * @param nametag → si les nametag sont visibles
+	 */
 	public void generateTeams(int number, int max, boolean friendlyFire, boolean nametag) {
 		for (Team team : this.scoreboard.wrapper.getScoreboard().getTeams()) {
 			team.unregister();
@@ -38,6 +51,10 @@ public class TeamsRegister {
 		}
 	}
 
+	/**
+	 * Renvoie la liste des équipes qui ont été générées
+	 * @return Hashmap → Map avec comme clé les noms des équipes et comme valeurs les équipes
+	 */
 	public HashMap<String, Teams> getTeamsList() {
 		return teamsList;
 	}

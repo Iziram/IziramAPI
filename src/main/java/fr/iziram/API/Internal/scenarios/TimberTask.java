@@ -12,6 +12,9 @@ import org.bukkit.scheduler.BukkitTask;
 import java.util.ArrayList;
 import java.util.UUID;
 
+/**
+ * Classe utilisé par le scénario Timber
+ */
 public class TimberTask {
 	private final UUID uuid;
 	private final int limit;

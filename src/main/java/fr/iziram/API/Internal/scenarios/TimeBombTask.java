@@ -11,6 +11,9 @@ import org.bukkit.entity.EntityType;
 import org.bukkit.inventory.InventoryHolder;
 import org.bukkit.inventory.ItemStack;
 
+/**
+ * Classe utilisé par le scénario TimeBomb
+ */
 public class TimeBombTask {
 
 	private final int duration;
