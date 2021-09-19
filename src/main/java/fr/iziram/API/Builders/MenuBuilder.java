@@ -198,7 +198,7 @@ public class MenuBuilder {
 
 	/**
 	 * Cette fonction permet de remplir le menu avec plusieurs objets cliquables en même temps
-	 * @param clickableItems -> Une HashMap contenant en clé la place de l'objet et en valeur l'objet cliquable
+	 * @param clickableItems → Une HashMap contenant en clé la place de l'objet et en valeur l'objet cliquable
 	 * @return MenuBuilder → renvoie l'instance MenuBuilder afin de pouvoir enchaîner les instructions (voir wiki)
 	 */
 	public MenuBuilder setMultipleClickableItem(HashMap<Integer, ClickableItem> clickableItems) {
@@ -209,7 +209,7 @@ public class MenuBuilder {
 	/**
 	 * Cette fonction permet de remplir le menu avec des itemStacks en tant que placeHolder, utile pour afficher un inventaire
 	 * sans pouvoir le modifier
-	 * @param itemStacks -> ItemStacks
+	 * @param itemStacks → ItemStacks
 	 * @return MenuBuilder → renvoie l'instance MenuBuilder afin de pouvoir enchaîner les instructions (voir wiki)
 	 */
 	public MenuBuilder addItemStackAsPlaceHolders(ItemStack... itemStacks) {
@@ -224,7 +224,7 @@ public class MenuBuilder {
 	/**
 	 * Cette fonction permet de remplir le menu avec des itemStacks en tant que placeHolder, utile pour afficher un inventaire
 	 * sans pouvoir le modifier
-	 * @param itemStacks -> ItemStacks
+	 * @param itemStacks → ItemStacks
 	 * @return MenuBuilder → renvoie l'instance MenuBuilder afin de pouvoir enchaîner les instructions (voir wiki)
 	 */
 	public MenuBuilder addItemStackAsPlaceHolders(List<ItemStack> itemStacks) {
@@ -240,7 +240,7 @@ public class MenuBuilder {
 	 * Cette fonction permet de générer le menu et le qualifié de menu de base
 	 * Un menu identifié comme basic peut être récupéré grâce au register plus simplement qu'un menu classique.
 	 * Cependant les modifications faites sur ce menu seront visibles par tous le monde utilisant le menu de base
-	 * @param basic -> identifiant basique
+	 * @param basic → identifiant basique
 	 * @return Menu → renvoie l'instance Menu construite
 	 */
 	public Menu build(String basic) {
@@ -251,7 +251,7 @@ public class MenuBuilder {
 
 	/**
 	 * Cette fonction permet de mettre à jour un menu déjà existant
-	 * @param menu -> identifiant basique
+	 * @param menu → identifiant basique
 	 * @return Menu → renvoie l'instance Menu construite
 	 */
 	public Menu update(Menu menu) {
@@ -278,7 +278,7 @@ public class MenuBuilder {
 	/**
 	 * Cette fonction permet d'assigner le menu à un utilisateur unique. Le menu ne sera alors utilisable que par cet
 	 * utilisateur.
-	 * @param data -> UUID de l'utilisateur
+	 * @param data → UUID de l'utilisateur
 	 * @return MenuBuilder → renvoie l'instance MenuBuilder afin de pouvoir enchaîner les instructions (voir wiki)
 	 */
 	public MenuBuilder setUser(UUID data) {
